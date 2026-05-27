@@ -1511,7 +1511,7 @@ function buildResult() {
     ? '🛡️ ペット保険を比較する（無料一括見積）'
     : '🛡️ Get Pet Insurance Quote';
   const shopUrl = isJpMarket
-    ? `https://search.rakuten.co.jp/search/mall/${encodeURIComponent((r.name.ja || r.name.en) + ' ペット用品')}/`
+    ? `https://hb.afl.rakuten.co.jp/hgc/19f363a4.da04594e.19f363a5.48c23d6d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%9A%E3%83%83%E3%83%88%E7%94%A8%E5%93%81%2F${encodeURIComponent((r.name.ja || r.name.en) + ' ペット用品')}/`
     : 'https://www.chewy.com';
   const insUrl = isJpMarket
     ? 'https://hoken.kakaku.com/insurance/pet/' // 価格.com ペット保険比較（A8でも提携可能）
