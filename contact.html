@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ | Petist</title>
+<meta name="description" content="Petist（ペティスト）へのお問い合わせはこちらから">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--coral:#FF6B6B;--orange:#FFB347;--lav:#A29BFE;--cream:#FFF9F3;--dark:#1E1E2E;--mid:#6B7280;--green:#4ade80}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--dark);line-height:1.75}
+.nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:2px solid #F0EAFF;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.nav-logo{font-family:'Baloo 2',cursive;font-size:22px;font-weight:900;background:linear-gradient(135deg,var(--coral),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{font-size:13px;font-weight:800;color:var(--lav);text-decoration:none;padding:8px 18px;border:2px solid #E0D8FF;border-radius:999px}
+.container{max-width:720px;margin:0 auto;padding:40px 24px 80px}
+h1{font-family:'Baloo 2',cursive;font-size:38px;font-weight:900;color:var(--dark);margin-bottom:8px;text-align:center}
+.sub{color:var(--mid);font-size:14px;font-weight:700;margin-bottom:36px;text-align:center}
+.faq-section{background:white;border:2px solid #F0EAFF;border-radius:18px;padding:28px;margin-bottom:28px}
+h2{font-family:'Baloo 2',cursive;font-size:22px;font-weight:800;color:var(--coral);margin-bottom:14px}
+.faq-item{padding:14px 0;border-bottom:1px solid #F0EAFF}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-weight:800;font-size:14px;color:var(--dark);margin-bottom:6px}
+.faq-a{font-size:13px;color:var(--mid);font-weight:600;line-height:1.7}
+.contact-form{background:white;border:2px solid #F0EAFF;border-radius:18px;padding:28px}
+.field{margin-bottom:18px}
+label{display:block;font-weight:800;font-size:13px;color:var(--dark);margin-bottom:6px}
+.required{color:var(--coral);font-size:11px;margin-left:4px}
+input,textarea,select{width:100%;padding:12px 14px;border:2px solid #E8E0FF;border-radius:11px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--dark);background:#F6F2FF;outline:none;transition:border-color .2s}
+input:focus,textarea:focus,select:focus{border-color:var(--lav)}
+textarea{resize:vertical;min-height:130px;font-family:'Nunito',sans-serif}
+.submit-btn{display:block;width:100%;padding:15px;background:linear-gradient(135deg,var(--coral),var(--orange));color:white;border:none;border-radius:12px;font-family:'Nunito',sans-serif;font-weight:900;font-size:15px;cursor:pointer;transition:all .2s;margin-top:8px}
+.submit-btn:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 8px 28px rgba(255,107,107,.3)}
+.info-note{background:#F0FFF4;border:2px solid #86efac;border-radius:12px;padding:14px;font-size:12px;color:#166534;font-weight:700;margin-bottom:24px;line-height:1.7}
+.success{display:none;background:#F0FFF4;border:2px solid #86efac;border-radius:14px;padding:20px;text-align:center;color:#166534;font-weight:800;margin-bottom:24px}
+.success.show{display:block}
+footer{background:#1E1E2E;color:#94a3b8;padding:30px 24px;text-align:center;font-size:11px}
+footer a{color:#a29bfe;text-decoration:none;margin:0 8px}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="nav-logo">🐾 Petist</a>
+  <a href="/" class="nav-back">← トップへ戻る</a>
+</nav>
+
+<div class="container">
+  <h1>お問い合わせ</h1>
+  <p class="sub">ご質問・ご要望・改善案を、心よりお待ちしています🐾</p>
+
+  <div class="info-note">
+    💡 まずは下記のよくある質問をご確認ください。それでも解決しない場合は、フォームよりご連絡くださいませ。<br>
+    ※返信は通常2〜3営業日以内にお返しします（個人運営のためお時間をいただく場合があります）
+  </div>
+
+  <div class="faq-section">
+    <h2>よくある質問</h2>
+    <div class="faq-item">
+      <div class="faq-q">Q. 診断結果は本当に当たるの？</div>
+      <div class="faq-a">A. MBTI理論と一般的なペット飼育情報に基づく参考情報です。実際のペット選びには、個体差・住環境等を総合的にご判断ください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. 完全無料で使えますか？</div>
+      <div class="faq-a">A. はい、すべての診断機能と詳細レポートが完全無料でご利用いただけます。登録も不要です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. 診断結果を保存できますか？</div>
+      <div class="faq-a">A. 結果ページの「📸 シェア画像を保存」ボタンから、画像形式で保存できます。SNSへのシェアも可能です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. 商品リンクをクリックしても大丈夫？</div>
+      <div class="faq-a">A. はい、安心してご利用ください。当サイトは楽天等のアフィリエイトプログラムに参加しており、ユーザーがリンク経由でご購入された場合に紹介手数料を得る場合があります。商品代金にお客様への追加負担はありません。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. ペット業者から提携の依頼をしたい</div>
+      <div class="faq-a">A. ペットフードメーカー、ペット保険会社、ペットショップ等からのご提案も歓迎しております。下記フォームよりご連絡ください。</div>
+    </div>
+  </div>
+
+  <div class="success" id="successMsg">
+    ✅ お問い合わせありがとうございます！通常2〜3営業日以内にご返信いたします。
+  </div>
+
+  <div class="contact-form">
+    <h2>お問い合わせフォーム</h2>
+    <p style="font-size:13px;color:var(--mid);font-weight:600;margin-bottom:20px">下記フォームよりお気軽にお問い合わせください。</p>
+    
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="field">
+        <label>お名前<span class="required">*</span></label>
+        <input type="text" name="name" required placeholder="山田 太郎">
+      </div>
+      <div class="field">
+        <label>メールアドレス<span class="required">*</span></label>
+        <input type="email" name="email" required placeholder="example@email.com">
+      </div>
+      <div class="field">
+        <label>お問い合わせ種別<span class="required">*</span></label>
+        <select name="type" required>
+          <option value="">選択してください</option>
+          <option value="bug">不具合のご報告</option>
+          <option value="feature">機能要望</option>
+          <option value="partnership">業務提携・広告掲載</option>
+          <option value="press">取材・メディア掲載</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>お問い合わせ内容<span class="required">*</span></label>
+        <textarea name="message" required placeholder="ご質問・ご要望をご記入ください"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">送信する 🐾</button>
+    </form>
+  </div>
+
+  <div style="margin-top:24px;padding:14px;background:white;border:2px solid #F0EAFF;border-radius:12px;font-size:12px;color:var(--mid);font-weight:600;text-align:center;line-height:1.7">
+    ※ 本フォームの送信は<strong>準備中</strong>です。ローンチ直後はFormspree.io等のサービスを連携し、メール通知を受け取れるよう設定します。<br>
+    急ぎの場合は、 SNSのDMからもご連絡いただけます: <strong>@petist_jp</strong>
+  </div>
+</div>
+
+<footer>
+  <div style="margin-bottom:10px"><a href="/">トップ</a> · <a href="/privacy.html">プライバシーポリシー</a> · <a href="/terms.html">利用規約</a> · <a href="/legal.html">特定商取引法表記</a> · <a href="/contact.html">お問い合わせ</a></div>
+  <div>© 2026 Petist. All rights reserved.</div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  // 一時的な動作：実装後はFormspree等に送信
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('successMsg').classList.add('show');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+</script>
+</body>
+</html>
